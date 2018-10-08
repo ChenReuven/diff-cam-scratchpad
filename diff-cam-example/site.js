@@ -1,5 +1,5 @@
 var video = document.getElementById('video');
-var canvas = document.getElementById('motion');
+//var canvas = document.getElementById('motion');
 var score = document.getElementById('score');
 
 function initSuccess() {
@@ -11,12 +11,13 @@ function initError() {
 }
 
 function capture(payload) {
+	console.log("payload = ", payload);
 	score.textContent = payload.score;
 }
 
 DiffCamEngine.init({
 	video: video,
-	motionCanvas: canvas,
+	//motionCanvas: canvas,
 	initSuccessCallback: initSuccess,
 	initErrorCallback: initError,
 	captureCallback: capture
