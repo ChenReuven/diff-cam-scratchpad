@@ -24,3 +24,11 @@ video, canvas {
 canvas {
 	image-rendering: pixelated;
 }
+
+.red {
+	background: red;
+}
+
+.yellow {
+	background: yellow;
+}
