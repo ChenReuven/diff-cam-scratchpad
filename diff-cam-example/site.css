@@ -1,28 +1,20 @@
 body {
-	margin: 20px;
 	font: 1.5em/1.2 sans-serif;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.spec-container {
 	text-align: center;
 }
 
-figure {
-	display: inline-block;
-	margin: 10px;
-	vertical-align: top;
-}
 
-figcaption {
-	text-align: left;
-	font-weight: bold;
-}
-
-video, canvas {
-	width: 480px;
-	height: 360px;
+video {
+	width: 100%;
 	background-color: #999;
-}
-
-canvas {
-	image-rendering: pixelated;
 }
 
 .red {
