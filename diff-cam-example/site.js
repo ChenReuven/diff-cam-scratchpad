@@ -8,7 +8,7 @@ const sound = new Howl({
 // Slider
 const slider = document.getElementById("myRange");
 const output = document.getElementById("demo");
-let {value: sliderValue} = slider;
+let { value: sliderValue } = slider;
 output.innerHTML = sliderValue;
 slider.oninput = function () {
 	output.innerHTML = this.value;
